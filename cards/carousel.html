@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="cabecalho" class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <h1 class="logo">Cars blog</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav nav-pills ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target=".modal">
+                    Cadastrar
+                </button>
+                <div class="modal fade" data-bs-backdrop="false">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="text-dark"><strong> Não perca nenhuma notícia!</strong></h4>
+                            </div>
+                            <div class="modal-body"> <!--formulário de cadastro-->
+                                <label for="nome">Seu nome</label>
+                                <input id="nome" type="text" class="form-control" placeholder="Nome">
+                                <label for="email">Seu E-mail</label>
+                                <input type="email" class="form-control" placeholder="E-mail">
+                                <label for="password">Crie uma senha</label>
+                                <input type="password" class="form-control" placeholder="Senha">
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" type="submit" data-bs-dismiss="modal">Fazer
+                                    login</button>
+                                <button class="btn btn-light" data-bs-dismiss="modal">Ainda não tenho conta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="https://blog.bioparquedorio.com.br/wp-content/uploads/2023/05/FBm2ZyxWQAIyBRY.jpg">Link de lontra</a></li>
+                    <li><a class="dropdown-item" href="https://adimax.com.br/wp-content/uploads/2022/05/cuidados-filhote-de-cachorro.jpg">Link de cachorro</a></li>
+                    <li><a class="dropdown-item" href="https://jpimg.com.br/uploads/2025/01/10-curiosidades-sobre-os-filhotes-de-gato.jpg">Link de gatinho</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <button id="btn-checar-emails" type="button" class="btn btn-warning">Checar caixa de mensagens
+
+        </button>
+    </header>
+    <div class="container">
+        <div class="carousel carousel-fade slide" id="carousel-exemplo" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img src="https://images.alphacoders.com/109/1096498.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h2>Mercedes AMG Black Series</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://4kwallpapers.com/images/walls/thumbs_3t/6749.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h2>Mclaren Senna</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://images.alphacoders.com/103/1030412.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h2>Koenigsegg Jesko</h2>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-exemplo" data-bs-slide="prev">
+                <span class="carousel-control-prev"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-exemplo" data-bs-slide="next">
+                <span class="carousel-control-next"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+    </content>
+
+    <section class="container produtos">
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <section id="Supercarros">
+                <h1>Conheça mais</h1>
+                <nav class="nav nav-tab">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active"
+                        type="button">Supercarros</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link"
+                        type="button">Esportivos</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link"
+                        type="button">Elétricos</button>
+                </nav>
+                <div class="tab-content">
+                    <div id="aba1" class="tab-pane active">
+                        <div class="row">
+                            <div id="cards" class="col-12 col-md-6 col-lg-4">
+                                <article class="card d-flex flex-column h-100">
+                                    <img src="https://images.alphacoders.com/109/1096498.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Mercedes AMG Black Series</h4>
+                                        <p class="card-text">Conheça os detalhes do novo Mercedes AMG Black Series, o
+                                            supercarro que promete a potência máxima!</p>
+                                        <a href="#" class="btn btn-primary">Leia mais</a>
+                                    </div>
+                                    <footer class="card-footer">
+                                        Postado em <time>13/03/2025 ás 19:00</time>
+                                    </footer>
+                                </article>
+                            </div>
+
+                            <div id="cards" class="col-12 col-md-6 col-lg-4">
+                                <article class="card d-flex flex-column h-100">
+                                    <img src="https://4kwallpapers.com/images/walls/thumbs_3t/6749.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Mclaren Senna</h4>
+                                        <p class="card-text">Conheça os detalhes do novo Mclaren Senna, o supercarro que
+                                            promete ser o mais rápido da marca.</p>
+                                        <a href="#" class="btn btn-primary">Leia mais</a>
+                                    </div>
+                                    <footer class="card-footer">
+                                        Postado em <time>13/03/2025 ás 19:00</time>
+                                    </footer>
+                                </article>
+                            </div>
+
+                            <div id="cards" class="col-12 col-md-6 col-lg-4">
+                                <article class="card d-flex flex-column h-100">
+                                    <img src="https://images.alphacoders.com/103/1030412.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Koenigsegg Jesko</h4>
+                                        <p class="card-text">Conheça os detalhes do novo Koenigsegg Jesko, o supercarro
+                                            que promete ser o mais rápido da marca.</p>
+                                        <a href="#" class="btn btn-primary">Leia mais</a>
+                                    </div>
+                                    <footer class="card-footer">
+                                        Postado em <time>13/03/2025 ás 19:00</time>
+                                    </footer>
+                                </article>
+                            </div>
+                        </div>
+            </section>
+        </div>
+
+        <footer id="rodape">
+            <div class="container form">
+                <div class="row">
+                    <div class=" text-light">
+                        <h2 id="contato">Entre em contato conosco</h2>
+                        <form class="form">
+                            <label class="form-label" for="nome">Seu nome:</label>
+                            <input type="text" class="form-control" placeholder="Nome">
+                            <label class="form-label" for="email">Seu E-mail</label>
+                            <input type="email" class="form-control" placeholder="E-mail">
+                            <label class="form-label" for="mensagem">Nos mande uma mensagem!</label>
+                            <textarea class="form-control" placeholder="Mensagem"></textarea>
+                            <button id="enviarFormulario" class="btn btn-success" type="submit">
+                                Enviar
+                            </button>
+                        </form>
+        </footer>
+
+
+        <footer id="rodape">
+            <div class="container">
+                <h5>Todos os direitos reservados Cars blog &copy; 2025</h5>
+            </div>
+        </footer>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-4">
+            <div data-bs-autohide="false" class="toast" id="mensagens-alerta">
+                <header class="toast-header">
+                    <strong>Importante</strong>
+                </header>
+                <div class="toast-body">
+                    Você possui 10 mensagens não lidas
+                    <div class="mt-2 pt-2 border-top">
+                        <button data-bs-dismiss="toast" class="btn btn-danger">
+                            Descartar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./bootstrap.bundle.min.js"></script>
+        <script>
+            const ativadorToast = document.getElementById('btn-checar-emails')
+            const mensagem = document.getElementById('mensagens-alerta')
+
+            if (ativadorToast) {
+                ativadorToast.addEventListener('click', function () {
+                    const toast = new bootstrap.Toast(mensagem)
+                    toast.show()
+                })
+            }
+        </script>
+
+</body>
+
+</html>
