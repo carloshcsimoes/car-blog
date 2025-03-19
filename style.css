@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #242424;
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-inner {
+    padding: 0;
+}
+
+header {
+    background-color: transparent;
+    padding: 10px;
+    color: rgb(187, 187, 187);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-drop {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    align-items: center;
+}
+
+input {
+    display: block;
+}
+
+.modal-body label {
+    color: black;
+    padding: 5px;
+}
+
+.container img {
+    border-radius: 30px;
+    margin-top: 40px;
+}
+
+.navbar-brand {
+    margin-right: 900px;
+}
+
+.produtos h1 {
+    color: white;
+    padding-top: 60px;
+}
+
+.logo {
+    font-weight: bolder;
+    margin-right: 480px;
+    white-space: nowrap;
+}
+
+#rodape {
+    border-top: grey 1px solid;
+    padding: 20px 0 20px;
+}
+
+.card img {
+    border-radius: 6px;
+    height: 200px; /* ajuste conforme necessário */
+    object-fit: cover;
+}
+
+.card {
+    background-color: #f7f7f7;
+    border: none;
+    box-shadow: 0 0 10px rgba(247, 245, 245, 0.966);
+}
+
+section {
+    padding-bottom: 40px;
+}
+
+.container img {
+    margin-top: 0;
+}
+
+.container form {
+    background-color: #3b3b3b;
+    border-radius: 20px;
+    padding: 20px;
+    width: 600px;
+}
+
+#enviarFormulario {
+    margin: 20px 20px 20px 0;
+}
+
+#rodape h5 {
+    font-family: sa;
+    color: white;
+}
+
+.tab-content { 
+    margin-top: 20px;
+}
+
+.form {
+    padding: 0;
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        display: block;
+    }
+    
+    #cards {
+        margin-top: 30px;
+    }
+
+    .container form {
+        background-color: #3b3b3b;
+        border-radius: 20px;
+        padding: 20px;
+        width: 500px;
+    }
+
+    .form {
+        padding: 0;
+    }
+}
